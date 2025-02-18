@@ -1,0 +1,143 @@
+  PTC Installation assistant log file
+========= PIM Version: 9.0.0.0 ==========
+Wed Sep 25 18:19:54 24
+=======================================
+ Sessioninfo xml file :C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\sessioninfo.xml)
+sessioninfo created
+ Sessioninfo xml file :C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\creoplatformagent.xml)
+Not able to locate the sessioninfo xml file (C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\creoplatformagent.xml)
+ Sessioninfo xml file :C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\creoplatformagent.xml)
+Not able to locate the sessioninfo xml file (C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\creoplatformagent.xml)
+ Sessioninfo xml file :C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\redistributables.xml)
+Not able to locate the sessioninfo xml file (C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\redistributables.xml)
+ Sessioninfo xml file :C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\redistributables.xml)
+Not able to locate the sessioninfo xml file (C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\redistributables.xml)
+ Sessioninfo xml file :C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\dotnet4.xml)
+Not able to locate the sessioninfo xml file (C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\dotnet4.xml)
+ Sessioninfo xml file :C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\dotnet4.xml)
+Not able to locate the sessioninfo xml file (C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\dotnet4.xml)
+Loaded product definition file: C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\pma.p.xml.
+ Sessioninfo xml file :C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\creoplatformagent.xml)
+Not able to locate the sessioninfo xml file (C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\creoplatformagent.xml)
+ Sessioninfo xml file :C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\creoplatformagent.xml)
+Not able to locate the sessioninfo xml file (C:\Program Files\PTC\Creo 9.0.0.0\Parametric\bin\pim\xml\creoplatformagent.xml)
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\afx.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\applications.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\apps.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\apps_data.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\creojs.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\creo_standards.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\demos.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\formats.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\graphic-library.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\help.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\ifx.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\includes.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\interconnect_app.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\intudfs.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\libs.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\manifests.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\manikin_lite.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\mfg_cmdsyn.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\mfg_cmdsyn_ai.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\modchk.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\proe.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\proole.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\protable.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\protoolkit.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\PRO_APPT.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\symbols.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\templates.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\text.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\tol_tables.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\usrprog.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\weblink.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Common Files\x86e_win64.
+Removed Start Menu Programs Folder Shortcut Creo Parametric 9.0.0.0.
+Removed Desktop Shortcut Creo Parametric 9.0.0.0.
+Removed Start Menu Programs Folder Shortcut Creo Distributed Batch 9.0.0.0.
+Removed Start Menu Programs Folder Shortcut Creo Modelcheck 9.0.0.0.
+Removed script parametric.psf.
+Removed script parametric.bat.
+Removed script cocreatesim.psf.
+Removed script cocreatesim.bat.
+Removed script ptchostid.bat.
+Removed script ptcstatus.bat.
+Removed script dcadsetup.bat.
+Removed script parametric_borrow.bat.
+Removed script pro_ncl_cvt.bat.
+Removed script protab.bat.
+Removed script ptcborrow.bat.
+Removed script progpostg.bat.
+Removed script progpostq.bat.
+Removed Windows Registry key [HKCR].phw.
+Removed Windows Registry key [HKCR]phwFile/DefaultIcon.
+Removed Windows Registry key [HKCR]phwFile/Shell/Open/Command.
+Removed Windows Registry key [HKCR].psf.
+Removed Windows Registry key [HKCR].pha.
+Removed Windows Registry key [HKCR].asm.
+Removed Windows Registry key [HKCR].dgm.
+Removed Windows Registry key [HKCR].drw.
+Removed Windows Registry key [HKCR].frm.
+Removed Windows Registry key [HKCR].lay.
+Removed Windows Registry key [HKCR].mfg.
+Removed Windows Registry key [HKCR].mrk.
+Removed Windows Registry key [HKCR].prt.
+Removed Windows Registry key [HKCR].sec.
+Removed Windows Registry value AppUserModelID under key [HKCR]creoFile.
+Removed Windows Registry key [HKCR]creoFile/DefaultIcon.
+Removed Windows Registry key [HKCR]creoFile/Shell/Open/Command.
+Removed Windows Registry key [HKCR]psfFile/DefaultIcon.
+Removed Windows Registry key [HKCR]psfFile/Shell/Open/Command.
+Removed Windows Registry key [HKCR]phaFile/DefaultIcon.
+Removed Windows Registry key [HKCR]phaFile/Shell/Open/Command.
+Removed Windows Registry value AppUserModelID under key [HKCR]asmFile.
+Removed Windows Registry key [HKCR]asmFile/DefaultIcon.
+Removed Windows Registry key [HKCR]asmFile/Shell/Open/Command.
+Removed Windows Registry value AppUserModelID under key [HKCR]dgmFile.
+Removed Windows Registry key [HKCR]dgmFile/DefaultIcon.
+Removed Windows Registry key [HKCR]dgmFile/Shell/Open/Command.
+Removed Windows Registry value AppUserModelID under key [HKCR]drwFile.
+Removed Windows Registry key [HKCR]drwFile/DefaultIcon.
+Removed Windows Registry key [HKCR]drwFile/Shell/Open/Command.
+Removed Windows Registry value AppUserModelID under key [HKCR]frmFile.
+Removed Windows Registry key [HKCR]frmFile/DefaultIcon.
+Removed Windows Registry key [HKCR]frmFile/Shell/Open/Command.
+Removed Windows Registry value AppUserModelID under key [HKCR]layFile.
+Removed Windows Registry key [HKCR]layFile/DefaultIcon.
+Removed Windows Registry key [HKCR]layFile/Shell/Open/Command.
+Removed Windows Registry value AppUserModelID under key [HKCR]mfgFile.
+Removed Windows Registry key [HKCR]mfgFile/DefaultIcon.
+Removed Windows Registry key [HKCR]mfgFile/Shell/Open/Command.
+Removed Windows Registry value AppUserModelID under key [HKCR]mrkFile.
+Removed Windows Registry key [HKCR]mrkFile/DefaultIcon.
+Removed Windows Registry key [HKCR]mrkFile/Shell/Open/Command.
+Removed Windows Registry value AppUserModelID under key [HKCR]prtFile.
+Removed Windows Registry key [HKCR]prtFile/DefaultIcon.
+Removed Windows Registry key [HKCR]prtFile/Shell/Open/Command.
+Removed Windows Registry value AppUserModelID under key [HKCR]secFile.
+Removed Windows Registry key [HKCR]secFile/DefaultIcon.
+Removed Windows Registry key [HKCR]secFile/Shell/Open/Command.
+Removed Windows Registry key [HKCR]Applications/parametric.exe/Shell/Open/Command.
+Removed Windows Registry key [HKCR]phwFile/Shell/Open.
+Removed Windows Registry key [HKCR]creoFile/Shell/Open.
+Removed Windows Registry key [HKCR]psfFile/Shell/Open.
+Removed Windows Registry key [HKCR]phaFile/Shell/Open.
+Removed Windows Registry key [HKCR]asmFile/Shell/Open.
+Removed Windows Registry key [HKCR]dgmFile/Shell/Open.
+Removed Windows Registry key [HKCR]drwFile/Shell/Open.
+Removed Windows Registry key [HKCR]frmFile/Shell/Open.
+Removed Windows Registry key [HKCR]layFile/Shell/Open.
+Removed Windows Registry key [HKCR]mfgFile/Shell/Open.
+Removed Windows Registry key [HKCR]mrkFile/Shell/Open.
+Removed Windows Registry key [HKCR]prtFile/Shell/Open.
+Removed Windows Registry key [HKCR]secFile/Shell/Open.
+Removed Windows Registry key [HKCR]Applications/parametric.exe/Shell/Open.
+Removed Windows Registry key [HKCR]phwFile/Shell.
+Removed Windows Registry key [HKCR]creoFile/Shell.
+Removed Windows Registry key [HKCR]Applications/parametric.exe/Shell.
+Removed Windows Registry key [HKCR]phwFile.
+Removed Windows Registry key [HKCR]Applications/parametric.exe.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Parametric\install.
+Removed the directory C:\Program Files\PTC\Creo 9.0.0.0\Parametric\text.
+Uninstall information removed from the registry for PTC Creo Parametric Version 9.0.0.0.
