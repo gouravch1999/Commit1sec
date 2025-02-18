@@ -5221,3 +5221,4 @@ Caused by: java.lang.NullPointerException
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
 	... 31 more
 CHnage 1 for PR2
+CHnage 1 for PR3
