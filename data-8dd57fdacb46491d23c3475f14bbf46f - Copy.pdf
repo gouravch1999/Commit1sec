@@ -1,0 +1,195 @@
+/*~A*/
+/*~+:VM Header*/
+/* UML source model state: Draft */
+/* ## Module Header Start [00a88bb7-891a-44b6-bfe8-41fe6b3eec79] */
+/****************************************************************************
+
+ COPYRIGHT (C) $Date: 2024/10/01 12:03:01CEST $
+ $CompanyInfo: VITESCO TECHNOLOGIES GROUP AG (EXCLUSIVE RIGHTS) $
+ ALL RIGHTS RESERVED.
+
+ The reproduction, transmission or use of this document or its contents is
+ not permitted without express written authority.
+ Offenders will be liable for damages. All rights, including rights created
+ by patent grant or registration of a utility model or design, are reserved.
+ ---------------------------------------------------------------------------
+
+ $Setting MEMBERPATH: /ES/FS/0A/bsw/sfty/ecm3_tc4xx/ecm3_core/cnf_core/i/project.pj $
+
+ $Log: ecm3_cnf_adc.c  $
+ Revision 1.7 2024/10/01 12:03:01CEST Shanthamallappa Shivakumar (uiv07456) (uiv07456) 
+ RO[16780804] : ECM3: Clean-up interfaces for Ecm3_BUAdc_xxx and Ecm3_BUGtm_xxx
+ Revision 1.6 2024/09/11 06:30:44CEST Panga Naresh (uiv06742) (uiv06742) 
+ RO[16686150] :ECM3 : TC4Dx: Develop ECM3 ADC monitoring
+ .
+ Revision 1.4 2024/03/05 12:52:15CET Shanthamallappa Shivakumar (uiv07456) (uiv07456) 
+ RO[16256804]: DEV_RO: ECM3 adaption to TC4x BSW firmware driver 
+ .
+ Revision 1.3 2023/07/11 16:27:57CEST Roehm Joerg (uid10714) (uid10714) 
+ RO[15862372] FS_0G01E_TC4XX_PTP4_ECM3_CORE_1.0.0
+ - adaptations for TC4xx/PTP4
+ .
+ Revision 1.2 2023/06/27 16:03:18CEST Roehm Joerg (uid10714) (uid10714) 
+ 15862372: C_FS_BSW_ECM3 - /0G01E-BSW_PLATFORM_SFTY
+ FS_0G01E_TC4XX_PTP4_ECM3_CORE_1.0.0 - MKS folder setup
+ 
+ ........
+ Revision 1.1 2023/06/27 16:02:47CEST Roehm Joerg (uid10714) (uid10714) 
+ Initial revision
+ Member added to project /ES/FS/0A/bsw/sfty/ecm3_tc4xx/ecm3_core/cnf_core/i/project.pj
+ Revision 1.4.1.2 2022/07/06 15:57:36CEST Kilger Armin (uid11198) (uid11198) 
+ RO[14141320] DEV_RO: ARCH_G.0.0: Remove IOPT/ICSP Prefix from PTP BSW
+ .
+ Revision 1.4.1.1 2022/05/11 11:09:47CEST Kilger Armin (uid11198) (uid11198) 
+ RO[14141320] DEV_RO: ARCH_G.0.0: Remove IOPT/ICSP Prefix from PTP BSW
+ .
+ Revision 1.4 2022/03/31 14:29:19CEST Patel Bipinkumar (uidt2117) (uidt2117) 
+ RO[14612294] FS_0G01E_TC3XX_ECM3_CORE_4.0.0 - CNF_CORE component configuration
+ .
+ Revision 1.4 2022/03/03 10:13:45CET Kilger Armin (uid11198) (uid11198) 
+ RO[14141162] DEV_RO: ADC: Supports ECM3 ADC, GTM features more configurable
+ RO[14121176] DEV_RO: ECM3_ADC: ECM3 shall supports new ADC driver to use of BandGap value 
+ .
+ Revision 1.3 2022/01/26 16:41:21CET Roehm Joerg (uid10714) (uid10714) 
+ RO[14281313] DEV_RO: MPU violations - make ECM3 operational to use firmware interfaces (PTP3)
+ - configuration taken over from pilot project
+ .
+ Revision 1.2 2020/08/05 08:54:11CEST Kilger Armin (uid11198) (uid11198) 
+ RO[12098618] DEV_RO: Implement module adcmon
+ .
+ Revision 1.1 2020/07/18 11:30:18CEST Roehm Joerg (uid10714) (uid10714) 
+ Initial revision
+ Member added to project /ES/FS/0A/bsw/sfty/ecm3_tc3xx/ecm3_core/cnf_core/i/project.pj
+
+ ****************************************************************************/
+/* ## Module Header End [00a88bb7-891a-44b6-bfe8-41fe6b3eec79] */
+
+/*~E*/
+/*~A*/
+/*~+:Includes*/
+#include "Std_Types.h"
+#include "ecm3_core.h"
+/*~E*/
+/*~A*/
+/*~+:Variables and Constants*/
+/*~A*/
+/*~+:variant configuration map #1*/
+#define ECM3_ECM3_START_SEC_CONST_5MS_ASIL_D_LOCAL
+#include "ecm3_memmap.h"
+/*~T*/
+#define ECM3_ECM3_START_SEC_CONST_5MS_ASIL_D_LOCAL
+#include "ecm3_memmap.h"
+static const Ecm3_Cnf_Adc_Vref_StructType Ecm3_Cnf_Adc_Vref_Variant01[ECM3_CNF_ADC_NR_VP_REF_CHN] =
+   {
+            { /* ECM3_CNF_ADC_IDX_VREF_CHK */
+            .Channel = ADC_CNF_BANDGAP,/* channel */
+            },
+   }; /**< reference (bandgap) voltage configuration */
+   
+static const Ecm3_Cnf_Adc_ChnId_Csd_StructType Ecm3_Cnf_Adc_ChnId_Csd_Variant01[ECM3_CNF_ADC_CSD_NR_ID_CHN] =
+   {
+            { /* ECM3_CNF_ADC_IDX_CSD_CHK_CHN */
+            .Channel = ADC_CNF_ADC_CH_HW0_MON_CSD,
+            },			
+   }; /**< ADC channel Id information for Converter Self Diagnostic */
+   
+const uint8 Ecm3_Cnf_Adc_VoltageInfo[ECM3_CNF_ADC_VOLTAGE] =
+   {
+		0U,
+		1U,
+   }; /**< voltages can be set */
+#define ECM3_ECM3_STOP_SEC_CONST_5MS_ASIL_D_LOCAL
+#include "ecm3_memmap.h"
+
+#define ECM3_ECM3_START_SEC_CONST_5MS_ASIL_D_LOCAL
+#include "ecm3_memmap.h"
+static const Ecm3_Cnf_Adc_VpMcChannels_StructType Ecm3_Cnf_Adc_VpMcChannels_Variant01[ECM3_CNF_ADC_NR_MC_CONV_CHK_CHN] =
+   {
+            { /* IDX_MC_CONV_CHK_CHN_0 */
+            .Primary = ADC_CNF_AN_IN_32_VSENS3_FB,/*ADC_TMADC0CH5*/
+            .Secondary = ADC_CNF_AN_IN_32_VSENS3_FB_SFTY,/*ADC_TMADC1CH1*/
+            .Threshold = 656U, /* 100mV */
+            },
+            { /* IDX_MC_CONV_CHK_CHN_1 */
+            .Primary = ADC_CNF_AN_IN_30_VSENS1_FB,/*ADC_TMADC0CH6*/
+            .Secondary = ADC_CNF_AN_IN_30_VSENS1_FB_SFTY,/*ADC_TMADC1CH2*/
+            .Threshold = 656U, /* 100mV */
+            },
+   }; /**< ADC channel configuration */
+   
+static const Ecm3_Cnf_Adc_ChnId_StructType Ecm3_Cnf_Adc_ChnId_Variant01[ECM3_CNF_ADC_NR_ID_CHN] =
+   {
+            { /* ECM3_CNF_ADC_IDX_END_CHK_CHN_1 */
+            .Primary = ADC_CNF_AN_IN_32_VSENS3_FB,/*ADC_TMADC0CH5*/
+            },
+            { /* ECM3_CNF_ADC_IDX_END_CHK_CHN_2 */
+            .Primary = ADC_CNF_AN_IN_30_VSENS1_FB,/*ADC_TMADC0CH6*/
+            },
+            { /* ECM3_CNF_ADC_IDX_END_CHK_CHN_3 */
+            .Primary = ADC_CNF_AI_VPRE_SW_1_FB,/*ADC_TMADC0CH9*/
+            },
+            { /* ECM3_CNF_ADC_IDX_END_CHK_CHN_4 */
+            .Primary = ADC_CNF_AI_VDD5_SW_FB,/*ADC_TMADC0CH10*/
+            },
+            { /* ECM3_CNF_ADC_IDX_END_CHK_CHN_5 */
+            .Primary = ADC_CNF_AI_VDD3_SW_FB,/*ADC_TMADC0CH11*/
+            },
+   }; /**< ADC channel ID information to get the info for conversion end check*/
+#define ECM3_ECM3_STOP_SEC_CONST_5MS_ASIL_D_LOCAL
+#include "ecm3_memmap.h"
+
+/*~T*/
+#define ECM3_ECM3_START_SEC_CONST_5MS_ASIL_D_LOCAL
+#include "ecm3_memmap.h"
+static const Ecm3_Cnf_Adc_VariantMap_StructType Ecm3_Cnf_Adc_VariantMap_01 =
+   {
+            .Vref = Ecm3_Cnf_Adc_Vref_Variant01,
+            .VpMcChannels = Ecm3_Cnf_Adc_VpMcChannels_Variant01,
+            .ConvEnd = Ecm3_Cnf_Adc_ChnId_Variant01,
+            .Csd = Ecm3_Cnf_Adc_ChnId_Csd_Variant01,
+   }; /**< configuration mapping between project variant and ADC configuration */
+#define ECM3_ECM3_STOP_SEC_CONST_5MS_ASIL_D_LOCAL
+#include "ecm3_memmap.h"
+/*~E*/
+#define ECM3_ECM3_START_SEC_CONST_5MS_ASIL_D_LOCAL
+#include "ecm3_memmap.h"
+const Ecm3_Cnf_Adc_VariantMap_ListType Ecm3_Cnf_Adc_VariantMapList[ECM3_CNF_ADC_NR_VARIANT] =
+   {
+            &Ecm3_Cnf_Adc_VariantMap_01,
+   }; /**< configuration mapping list */
+#define ECM3_ECM3_STOP_SEC_CONST_5MS_ASIL_D_LOCAL
+#include "ecm3_memmap.h"
+
+#define ECM3_ECM3_START_SEC_CONST_5MS_ASIL_D_LOCAL
+#include "ecm3_memmap.h"
+
+/* Conversion end check. enabled: ECM3_TRUE, disabled: ECM3_FALSE */
+const Ecm3_BooleanType Ecm3_Cnf_Adc_ConvEndChkEna = ECM3_TRUE;
+/* EDM identifier for conversion end check. Shall be set to 0xFF in case Ecm3_Cnf_Adc_ConvEndChkEna = ECM3_FALSE */
+const uint8 Ecm3_Cnf_Adc_EdmIdConvEndChk = ECM3_CNF_EDM_ID_ADC_CONV_END;
+
+/* Converter Self Diagnostic Check. enabled: ECM3_TRUE, disabled: ECM3_FALSE */
+const Ecm3_BooleanType Ecm3_Cnf_Adc_CsdChkEna = ECM3_TRUE;
+/* EDM identifier for Converter Self Diagnostic Check. Shall be set to 0xFF in case Ecm3_Cnf_Adc_CsdChkEna = ECM3_FALSE */
+const uint8 Ecm3_Cnf_Adc_EdmIdCsdChk = ECM3_CNF_EDM_ID_ADC_CSD;
+
+/* Vref check. enabled: ECM3_TRUE, disabled: ECM3_FALSE */
+const Ecm3_BooleanType Ecm3_Cnf_Adc_VrefChkEna = ECM3_TRUE;
+/* EDM identifier for Vref check. Shall be set to 0xFF in case Ecm3_Cnf_Adc_VrefChkEna = ECM3_FALSE */
+const uint8 Ecm3_Cnf_Adc_EdmIdVrefChk = ECM3_CNF_EDM_ID_ADC_VREF;
+
+/* Monitoring of redundant signals on primary and secondary ADC group. enabled: ECM3_TRUE, disabled: ECM3_FALSE */
+const volatile Ecm3_BooleanType Ecm3_Cnf_Adc_PrimSecGrpChkEna = ECM3_TRUE;
+/* EDM identifier for redundant primary and secondary ADC group check. Shall be set to 0xFF in case Ecm3_Cnf_Adc_PrimSecGrpChkEna = ECM3_FALSE */
+const uint8 Ecm3_Cnf_Adc_EdmIdPrimSecGrpChk = ECM3_CNF_EDM_ID_ADC_MC_CONV;
+
+#define ECM3_ECM3_STOP_SEC_CONST_5MS_ASIL_D_LOCAL
+#include "ecm3_memmap.h"
+
+/*~E*/
+/*~A*/
+/*~+:Private and Public Operations*/
+/** Check the plausibility by comparing the ADC values from primary and secondary ADC */
+
+/*~E*/
+
