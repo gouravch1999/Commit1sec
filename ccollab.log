@@ -1,6 +1,5 @@
 !SESSION 2024-10-15 10:24:05.623 -----------------------------------------------
 eclipse.buildId=unknown
-TEst
 java.version=11.0.21
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
@@ -5221,3 +5220,4 @@ Caused by: java.lang.NullPointerException
 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
 	... 31 more
+CHnage 1 for PR2
